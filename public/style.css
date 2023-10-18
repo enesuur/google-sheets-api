@@ -1,0 +1,116 @@
+    section {
+        max-width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .linewrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    /* Set some styles for the form labels */
+    label {
+        min-width: 120px;
+        margin: auto;
+        font-weight: bold;
+        text-align: end;
+    }
+
+    /* Set some styles for the input box */
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+    }
+
+    /* Set some styles for the submit button */
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        /* float: right; */
+    }
+
+    /* Set some styles for the clear button */
+    input[type=reset] {
+        background-color: #3636f4;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        /* float: right; */
+        /* margin-right: 10px; */
+    }
+
+    /* Set some styles for the form buttons container */
+    .buttons {
+        /* overflow: hidden; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    /* Set some styles for the input boxes */
+    .input-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    .input-row input[type=text] {
+        flex: 1;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        /* border: none; */
+        border-radius: 2px;
+        background-color: #f5f5f5;
+        margin: 0 5px 0;
+        border-style: solid;
+        border-width: thin;
+    }
+
+    .input-row label {
+        text-align: center;
+    }
+
+    .previewcontainer {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .previewlabels{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .previewlabels label {
+        text-align: center;
+    }
+    .previewers {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    textarea {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: small;
+        height: 200px;
+        width: 48%;
+    }

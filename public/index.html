@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/app.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+    <title>Google SpreadSheet API Tester</title>
+</head>
+
+<body>
+    <section>
+        <form>
+            <div class="linewrapper">
+                <label for="apipath">API Path:</label>
+                <input type="text" id="apipath" name="apipath" placeholder="/api...">
+            </div>
+            <div class="linewrapper">
+                <label for="method">HTTP Method:</label>
+                <select id="MethodSelect" name="method">
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                    <option value="PUT">PUT</option>
+                    <option value="PATCH">PATCH</option>
+                    <option value="DELETE">DELETE</option>
+                </select>
+            </div>
+            <label for="key1">Body Data</label>
+            <hr>
+            <div class="input-row">
+                <label for="name">name</label>
+                <label for="email">e-mail</label>
+            </div>
+            <div class="input-row">
+                <input type="text" name="name">
+                <input type="text" name="email">
+            </div>
+            <hr>
+            <div class="buttons">
+                <input type="reset" value="Preview">
+                <input type="submit" value="Fetch">
+            </div>
+        </form>
+        <section class="previewcontainer">
+            <div class="previewlabels">
+                <label for="preview">Preview</label>
+                <label for="response">Reponse</label>
+            </div>
+            <div class="previewers">
+                <textarea class="previewarea" name="preview" readonly></textarea>
+                <textarea class="responsearea" name="response" readonly></textarea>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
